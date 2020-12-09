@@ -3,7 +3,8 @@
 # installing minimal app set
 sudo pkg_add cmus compton ftp gcc gmrun gnome-themes-extra innoextractmake mc mcabber \
 mediainfo mozilla-dicts-ru mozilla-dicts-uk mpv noto-cjk obconf obmenu openbox \
-pavucontrol rtorrent seamonkey slim slim-themes tilda tint2 tor-browser unifont vim zsh
+pavucontrol rtorrent seamonkey slim slim-themes tilda tint2 tor-browser unifont \
+unzip-6.0p13-iconv vim zsh
 
 # installing ports tree
 cd /tmp
