@@ -12,12 +12,12 @@ ftp https://cdn.openbsd.org/pub/OpenBSD/$(uname -r)/{ports.tar.gz,SHA256.sig}
 signify -Cp /etc/signify/openbsd-$(uname -r | cut -c 1,3)-base.pub -x SHA256.sig ports.tar.gz
 cd /usr
 sudo tar xzvf /tmp/ports.tar.gz
-sudo echo 'WRKOBJDIR=/usr/obj/ports' > /etc/mk.conf
-sudo echo 'DISTDIR=/usr/distfiles' >> /etc/mk.conf
-sudo echo 'PACKAGE_REPOSITORY=/usr/packages' >> /etc/mk.conf
+sudo sh -c "echo 'WRKOBJDIR=/usr/obj/ports' > /etc/mk.conf"
+sudo sh -c "echo 'DISTDIR=/usr/distfiles' >> /etc/mk.conf"
+sudo sh -c "echo 'PACKAGE_REPOSITORY=/usr/packages' >> /etc/mk.conf"
 
 # applying post-install settings
 echo 'exec openbox-session' > ~/.xinitrc
-sudo echo '/etc/rc.d/slim start' > /etc/rc.local
-sudo echo 'pkg_scripts="messagebus"' > /etc/rc.conf.local
-sudo echo 'dbus_daemon=YES' >> /etc/rc.conf.local
+sudo sh -c "echo '/etc/rc.d/slim start' > /etc/rc.local"
+sudo sh -c "echo 'pkg_scripts="messagebus"' > /etc/rc.conf.local"
+sudo sh -c "echo 'dbus_daemon=YES' >> /etc/rc.conf.local"
