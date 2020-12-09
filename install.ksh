@@ -11,7 +11,7 @@ cd /tmp
 ftp https://cdn.openbsd.org/pub/OpenBSD/$(uname -r)/{ports.tar.gz,SHA256.sig}
 signify -Cp /etc/signify/openbsd-$(uname -r | cut -c 1,3)-base.pub -x SHA256.sig ports.tar.gz
 cd /usr
-sudo tar xzf /tmp/ports.tar.gz
+sudo tar xzvf /tmp/ports.tar.gz
 sudo echo 'WRKOBJDIR=/usr/obj/ports' > /etc/mk.conf
 sudo echo 'DISTDIR=/usr/distfiles' >> /etc/mk.conf
 sudo echo 'PACKAGE_REPOSITORY=/usr/packages' >> /etc/mk.conf
