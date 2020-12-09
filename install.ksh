@@ -1,7 +1,7 @@
 #!/usr/bin/env ksh
 
 # installing minimal app set
-sudo pkg_add cmus compton ftp gcc gmrun gnome-themes-extra innoextractmake mc mcabber \
+sudo pkg_add cmus compton gcc gmrun gnome-themes-extra innoextract make mc mcabber \
 mediainfo mozilla-dicts-be mozilla-dicts-ru mozilla-dicts-uk mpv noto-cjk obconf \
 obmenu openbox pavucontrol rtorrent seamonkey slim slim-themes tilda tint2 tor-browser \
 unifont unzip-6.0p13-iconv vim zsh
