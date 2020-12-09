@@ -1,9 +1,9 @@
 #!/usr/bin/env ksh
 
 # installing minimal app set
-sudo pkg_add cmus compton curl ftp gcc gmrun gnome-themes-extra innoextract libiconv make mc \
-mcabber mediainfo mpv noto-cjk obconf obmenu openbox pavucontrol rtorrent seamonkey slim \
-slim-themes tilda tint2 tor-browser unifont unzip-iconv vim zsh
+sudo pkg_add cmus compton ftp gcc gmrun gnome-themes-extra innoextractmake mc mcabber \
+mediainfo mpv noto-cjk obconf obmenu openbox pavucontrol rtorrent seamonkey slim \
+slim-themes tilda tint2 tor-browser unifont vim zsh
 
 # installing ports tree
 cd /tmp
