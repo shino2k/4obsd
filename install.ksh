@@ -23,7 +23,7 @@ sudo sh -c "echo 'pkg_scripts="messagebus"' > /etc/rc.conf.local"
 sudo sh -c "echo 'dbus_daemon=YES' >> /etc/rc.conf.local"
 
 # setting up zsh
-sudo apk_add zsh
+sudo pkg_add zsh
 chsh -s zsh
 echo 'export QT_QPA_PLATFORMTHEME=gtk2' > ~/.zprofile
 sudo cp ~/.zprofile /root
