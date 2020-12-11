@@ -21,8 +21,9 @@ echo 'exec openbox-session' > ~/.xinitrc
 sudo sh -c "echo '/etc/rc.d/slim start' > /etc/rc.local"
 sudo sh -c "echo 'pkg_scripts="messagebus"' > /etc/rc.conf.local"
 sudo sh -c "echo 'dbus_daemon=YES' >> /etc/rc.conf.local"
-sudo sh -c "echo 'export QT_QPA_PLATFORMTHEME=gtk2' > /etc/skel/.profile"
 
 # setting up zsh
 sudo pkg_add zsh
 chsh -s zsh
+echo 'export QT_QPA_PLATFORMTHEME=gtk2' > ~/.zprofile
+sudo cp ~/.zprofile /root
