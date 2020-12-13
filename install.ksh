@@ -19,6 +19,7 @@ sudo sh -c "echo 'PACKAGE_REPOSITORY=/usr/packages' >> /etc/mk.conf"
 # applying post-install settings
 echo 'exec openbox-session' > ~/.xinitrc
 sudo sh -c "echo '/etc/rc.d/slim start' > /etc/rc.local"
+sudo sh -c "echo 'wsmoused_flags="-p /dev/ums0"' > /etc/rc.conf.local"
 sudo sh -c "echo 'pkg_scripts="messagebus"' > /etc/rc.conf.local"
 sudo sh -c "echo 'dbus_daemon=YES' >> /etc/rc.conf.local"
 
