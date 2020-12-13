@@ -4,7 +4,7 @@
 sudo pkg_add arandr cmixer cmus compton feh gcc gmrun gnome-themes-extra innoextract mc \
 mcabber mediainfo mozilla-dicts-be mozilla-dicts-ru mozilla-dicts-uk mpv neofetch nmap \
 noto-cjk obconf obmenu openbox qtstyleplugins rtorrent scrot seamonkey slim slim-themes \
-tilda tint2 tor tshark unifont unzip-6.0p13-iconv vim xscreensaver zathura zathura-djvu
+tilda tint2 tor-browser tshark unifont unzip-6.0p13-iconv vim xscreensaver zathura zathura-djvu
 
 # installing ports tree
 cd /tmp
