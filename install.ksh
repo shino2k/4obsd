@@ -18,7 +18,7 @@ cd fvwm-themes-0.7.0
 ./configure
 make && sudo make install
 cd ..
-sudo fvwm-themes-config --site --install fvwm-themes-extra-0.7.0.tar.gz
+fvwm-themes-config --site --install fvwm-themes-extra-0.7.0.tar.gz
 ftp https://cdn.openbsd.org/pub/OpenBSD/$(uname -r)/{ports.tar.gz,SHA256.sig}
 signify -Cp /etc/signify/openbsd-$(uname -r | cut -c 1,3)-base.pub -x SHA256.sig ports.tar.gz
 cd /usr
