@@ -2,8 +2,7 @@
 
 # installing minimal app set
 sudo pkg_add arandr cmixer fvwm2+fvicons gcc htop mozilla-dicts-be mozilla-dicts-ru \
-mozilla-dicts-uk noto-cjk obfs4proxy ristretto seamonkey thunar tilda tor unifont \
-unzip-6.0p13-iconv vim xscreensaver
+mozilla-dicts-uk noto-cjk obfs4proxyseamonkey tor unifont unzip-6.0p13-iconv vim
 
 # installing additional app set
 #sudo pkg_add cmus compton innoextract mc mcabber mediainfo mpv neofetch nmap \
@@ -20,7 +19,7 @@ sudo sh -c "echo 'DISTDIR=/usr/distfiles' >> /etc/mk.conf"
 sudo sh -c "echo 'PACKAGE_REPOSITORY=/usr/packages' >> /etc/mk.conf"
 
 # applying post-install settings
-echo 'exec fvwm' > ~/.xinitrc
+echo 'exec fvwm-themes-start' > ~/.xinitrc
 sudo sh -c "echo wsmoused_flags=-p /dev/ums0 > /etc/rc.conf.local"
 sudo sh -c "echo pkg_scripts="messagebus" >> /etc/rc.conf.local"
 sudo sh -c "echo dbus_daemon="YES" >> /etc/rc.conf.local"
