@@ -14,7 +14,7 @@ cd /tmp
 wget http://prdownloads.sourceforge.net/fvwm-themes/fvwm-themes-0.7.0.tar.gz
 wget http://prdownloads.sourceforge.net/fvwm-themes/fvwm-themes-extra-0.7.0.tar.gz
 tar xzvf fvwm-themes-0.7.0.tar.gz
-cd xzvf fvwm-themes-0.7.0
+cd fvwm-themes-0.7.0
 ./configure
 make && sudo make install
 cd ..
