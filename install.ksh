@@ -1,7 +1,7 @@
 #!/usr/bin/env ksh
 
 # installing minimal app set
-sudo pkg_add arandr cmixer fvwm2+fvicons gcc htop mc mozilla-dicts-be mozilla-dicts-ru \
+sudo pkg_add arandr cmixer fvwm2 gcc htop mc mozilla-dicts-be mozilla-dicts-ru \
 mozilla-dicts-uk noto-cjk obfs4proxy seamonkey slim slim-themes tor unifont \
 unzip-6.0p13-iconv vim wget
 
@@ -30,6 +30,7 @@ sudo sh -c "echo 'PACKAGE_REPOSITORY=/usr/packages' >> /etc/mk.conf"
 sudo sh -c "echo wsmoused_flags=-p /dev/ums0 > /etc/rc.conf.local"
 sudo sh -c "echo pkg_scripts="messagebus" >> /etc/rc.conf.local"
 sudo sh -c "echo dbus_daemon="YES" >> /etc/rc.conf.local"
+sudo sh -c "echo /usr/local/bin/slim -d > /etc/rc.local"
 #sudo sh -c "echo kern.audio.record=1 >> /etc/sysctl.conf"
 
 # setting up zsh
