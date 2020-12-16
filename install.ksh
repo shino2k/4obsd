@@ -11,14 +11,11 @@ unifont unzip-6.0p13-iconv vim wget
 
 # applying post-install settings
 cd /tmp
-wget http://prdownloads.sourceforge.net/fvwm-themes/fvwm-themes-0.7.0.tar.gz
-wget http://prdownloads.sourceforge.net/fvwm-themes/fvwm-themes-extra-0.7.0.tar.gz
-tar xzvf fvwm-themes-0.7.0.tar.gz
-cd fvwm-themes-0.7.0
-./configure
-make && sudo make install
+git clone https://github.com/bfmartin/fvwm-config-on-openbsd.git
+cd fvwm-config-on-openbsd
+chmod +x ./bin/install.sh
+sh ./bin/install.sh
 cd ..
-fvwm-themes-config --site --install fvwm-themes-extra-0.7.0.tar.gz
 ftp https://cdn.openbsd.org/pub/OpenBSD/$(uname -r)/{ports.tar.gz,SHA256.sig}
 signify -Cp /etc/signify/openbsd-$(uname -r | cut -c 1,3)-base.pub -x SHA256.sig ports.tar.gz
 cd /usr
