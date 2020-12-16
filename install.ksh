@@ -6,8 +6,8 @@ mozilla-dicts-uk noto-cjk obfs4proxy seamonkey slim slim-themes tor unifont \
 unzip-6.0p13-iconv vim wget
 
 # installing additional app set
-#sudo pkg_add cmus compton innoextract mc mcabber mediainfo mpv neofetch nmap \
-#rtorrent tshark xfce4-screenshooter zathura zathura-djvu
+#sudo pkg_add cmus compton innoextract mcabber mediainfo mpv neofetch nmap rtorrent \
+#tshark zathura zathura-djvu
 
 # applying post-install settings
 cd /tmp
