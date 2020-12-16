@@ -1,11 +1,13 @@
 #!/usr/bin/env ksh
 
 # installing minimal app set
-sudo pkg_add arandr cmixer cmus compton feh gcc gmrun gnome-themes-extra htop innoextract mc \
-mcabber mediainfo mozilla-dicts-be mozilla-dicts-ru mozilla-dicts-uk mpv neofetch nmap \
-noto-cjk obconf obfs4proxy obmenu openbox qtstyleplugins rtorrent scrot seamonkey slim 
-slim-themes tilda tint2 tor tshark unifont unzip-6.0p13-iconv vim xscreensaver zathura \
-zathura-djvu
+sudo pkg_add arandr cmixer fvwm gcc htop mozilla-dicts-be mozilla-dicts-ru mozilla-dicts-uk \
+noto-cjk obfs4proxy ristretto seamonkey thunar tilda tor unifont unzip-6.0p13-iconv vim \
+xscreensaver
+
+# installing additional app set
+#sudo pkg_add cmus compton innoextract mc mcabber mediainfo mpv neofetch nmap \
+#rtorrent tshark xfce4-screenshooter zathura zathura-djvu
 
 # installing ports tree
 cd /tmp
@@ -18,8 +20,7 @@ sudo sh -c "echo 'DISTDIR=/usr/distfiles' >> /etc/mk.conf"
 sudo sh -c "echo 'PACKAGE_REPOSITORY=/usr/packages' >> /etc/mk.conf"
 
 # applying post-install settings
-echo 'exec openbox-session' > ~/.xinitrc
-sudo sh -c "echo '/etc/rc.d/slim start' > /etc/rc.local"
+echo 'exec fvwm' > ~/.xinitrc
 sudo sh -c "echo wsmoused_flags=-p /dev/ums0 > /etc/rc.conf.local"
 sudo sh -c "echo pkg_scripts="messagebus" >> /etc/rc.conf.local"
 sudo sh -c "echo dbus_daemon="YES" >> /etc/rc.conf.local"
@@ -27,5 +28,5 @@ sudo sh -c "echo dbus_daemon="YES" >> /etc/rc.conf.local"
 
 # setting up zsh
 sudo pkg_add zsh
-echo 'export QT_QPA_PLATFORMTHEME=gtk2' > ~/.zprofile
-sudo cp ~/.zprofile /root
+#echo 'export QT_QPA_PLATFORMTHEME=gtk2' > ~/.zprofile
+#sudo cp ~/.zprofile /root
