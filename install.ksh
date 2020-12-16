@@ -2,7 +2,7 @@
 
 # installing minimal app set
 sudo pkg_add arandr cmixer fvwm2+fvicons gcc htop mc mozilla-dicts-be mozilla-dicts-ru \
-mozilla-dicts-uk noto-cjk obfs4proxyseamonkey slim slim-themes tor unifont \
+mozilla-dicts-uk noto-cjk obfs4proxy seamonkey slim slim-themes tor unifont \
 unzip-6.0p13-iconv vim wget
 
 # installing additional app set
