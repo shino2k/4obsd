@@ -1,9 +1,9 @@
 #!/usr/bin/env ksh
 
 # installing minimal app set
-sudo pkg_add arandr cmixer fvwm gcc htop mozilla-dicts-be mozilla-dicts-ru mozilla-dicts-uk \
-noto-cjk obfs4proxy ristretto seamonkey thunar tilda tor unifont unzip-6.0p13-iconv vim \
-xscreensaver
+sudo pkg_add arandr cmixer fvwm2+fvicons gcc htop mozilla-dicts-be mozilla-dicts-ru \
+mozilla-dicts-uk noto-cjk obfs4proxy ristretto seamonkey thunar tilda tor unifont \
+unzip-6.0p13-iconv vim xscreensaver
 
 # installing additional app set
 #sudo pkg_add cmus compton innoextract mc mcabber mediainfo mpv neofetch nmap \
