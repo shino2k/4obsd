@@ -4,7 +4,7 @@
 sudo pkg_add arandr audacity cmixer compton dia filezilla fvwm2 gcc gimp gmrun gns3 \
 gnome-themes-extra gpicview htop innoextract lame libreoffice libreoffice-i18n-ru \
 mozilla-dicts-be mozilla-dicts-ru mozilla-dicts-uk neofetch nitrogen nmap-zenmap noto-cjk \
-obfs4proxy p5-XML-Parser pcmanfm putty py3-pip qbittorrent qemu qtstyleplugins seamonkey \
+obfs4proxy p5-XML-Parser pcmanfm putty-gui py3-pip qbittorrent qemu qtstyleplugins seamonkey \
 slim slim-themes tkabber-plugins tor tshark unifont unzip-6.0p13-iconv vim vlc wget \
 xsane-0.999p4-gimp zathura zathura-djvu
 
