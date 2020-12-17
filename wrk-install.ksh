@@ -11,7 +11,7 @@ xsane-0.999p4-gimp zathura zathura-djvu
 # applying post-install settings
 cd /tmp
 git clone https://github.com/bfmartin/fvwm-config-on-openbsd.git
-cd fvwm-config-on-openbsd
+cd fvwm-config-on-openbsd/
 chmod +x ./bin/install.sh
 sh ./bin/install.sh
 cd ..
