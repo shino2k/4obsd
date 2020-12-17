@@ -5,8 +5,8 @@ sudo pkg_add arandr audacity cmixer compton dia filezilla fvwm2 gcc gigolo gimp 
 gpicview htop innoextract lame libreoffice libreoffice-i18n-ru mozilla-dicts-be \
 mozilla-dicts-ru mozilla-dicts-uk neofetch nitrogen nmap-zenmap noto-cjk obfs4proxy \
 p5-XML-Parser pcmanfm putty py3-pip qbittorrent qemu qtstyleplugins seamonkey slim \
-slim-themes tkabber-plugins tor unifont unzip-6.0p13-iconv vim vlc wget wireshark zathura \
-zathura-djvu
+slim-themes tkabber-plugins tor tshark unifont unzip-6.0p13-iconv vim vlc wget \
+xsane-0.999p4-gimp zathura zathura-djvu
 
 # applying post-install settings
 cd /tmp
@@ -24,7 +24,7 @@ sudo sh -c "echo 'WRKOBJDIR=/usr/obj/ports' > /etc/mk.conf"
 sudo sh -c "echo 'DISTDIR=/usr/distfiles' >> /etc/mk.conf"
 sudo sh -c "echo 'PACKAGE_REPOSITORY=/usr/packages' >> /etc/mk.conf"
 sudo sh -c "echo wsmoused_flags=-p /dev/ums0 > /etc/rc.conf.local"
-sudo sh -c "echo pkg_scripts="messagebus" >> /etc/rc.conf.local"
+sudo sh -c "echo pkg_scripts="avahi_daemon messagebus" >> /etc/rc.conf.local"
 sudo sh -c "echo dbus_daemon="YES" >> /etc/rc.conf.local"
 sudo sh -c "echo /usr/local/bin/slim -d > /etc/rc.local"
 #sudo sh -c "echo kern.audio.record=1 >> /etc/sysctl.conf"
