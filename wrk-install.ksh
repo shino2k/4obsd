@@ -1,13 +1,11 @@
 #!/usr/bin/env ksh
 
-# installing minimal app set
-sudo pkg_add arandr cmixer fvwm2 gcc htop mc mozilla-dicts-be mozilla-dicts-ru \
-mozilla-dicts-uk noto-cjk obfs4proxy p5-XML-Parser seamonkey slim slim-themes tor \
-unifont unzip-6.0p13-iconv vim wget
-
-# installing additional app set
-#sudo pkg_add cmus compton innoextract mcabber mediainfo mpv neofetch nmap rtorrent \
-#tshark zathura zathura-djvu
+# installing app set
+sudo pkg_add arandr audacity cmixer compton dia fvwm2 gcc gigolo gns3 gpicview htop \
+innoextract lame libreoffice libreoffice-i18n-ru mozilla-dicts-be mozilla-dicts-ru \
+mozilla-dicts-uk neofetch nitrogen nmap-zenmap noto-cjk obfs4proxy p5-XML-Parser pcmanfm \
+putty py3-pip qbittorrent qemu qtstyleplugins seamonkey slim slim-themes tkabber-plugins tor \
+unifont unzip-6.0p13-iconv vim vlc wget wireshark zathura zathura-djvu
 
 # applying post-install settings
 cd /tmp
@@ -20,7 +18,7 @@ ftp https://cdn.openbsd.org/pub/OpenBSD/$(uname -r)/{ports.tar.gz,SHA256.sig}
 signify -Cp /etc/signify/openbsd-$(uname -r | cut -c 1,3)-base.pub -x SHA256.sig ports.tar.gz
 cd /usr
 sudo tar xzvf /tmp/ports.tar.gz
-echo 'exec fvwm-themes-start' > ~/.xinitrc
+echo 'exec fvwm' > ~/.xinitrc
 sudo sh -c "echo 'WRKOBJDIR=/usr/obj/ports' > /etc/mk.conf"
 sudo sh -c "echo 'DISTDIR=/usr/distfiles' >> /etc/mk.conf"
 sudo sh -c "echo 'PACKAGE_REPOSITORY=/usr/packages' >> /etc/mk.conf"
@@ -32,5 +30,5 @@ sudo sh -c "echo /usr/local/bin/slim -d > /etc/rc.local"
 
 # setting up zsh
 sudo pkg_add zsh
-#echo 'export QT_QPA_PLATFORMTHEME=gtk2' > ~/.zprofile
-#sudo cp ~/.zprofile /root
+echo 'export QT_QPA_PLATFORMTHEME=gtk2' > ~/.zprofile
+sudo cp ~/.zprofile /root
