@@ -13,7 +13,7 @@ cd /tmp
 git clone https://github.com/bfmartin/fvwm-config-on-openbsd.git
 cd fvwm-config-on-openbsd/
 chmod +x ./bin/install.sh
-sh ./bin/install.sh
+sh ./bin/install.sh -y
 cd ..
 ftp https://cdn.openbsd.org/pub/OpenBSD/$(uname -r)/{ports.tar.gz,SHA256.sig}
 signify -Cp /etc/signify/openbsd-$(uname -r | cut -c 1,3)-base.pub -x SHA256.sig ports.tar.gz
