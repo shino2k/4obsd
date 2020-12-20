@@ -1,8 +1,8 @@
 #!/usr/bin/env ksh
 
 # installing minimal app set
-sudo pkg_add arandr cmixer fvwm2 gcc htop mozilla-dicts-be mozilla-dicts-ru \
-mozilla-dicts-uk noto-cjk obfs4proxy p5-XML-Parser seamonkey slim slim-themes tor \
+sudo pkg_add arandr cmixer firefox-esr fvwm2 gcc htop mozilla-dicts-be mozilla-dicts-ru \
+mozilla-dicts-uk noto-cjk obfs4proxy p5-XML-Parser slim slim-themes tor \
 unifont unzip-6.0p13-iconv vim wget xfe gnome-themes-extra
 
 # applying post-install settings
