@@ -1,9 +1,9 @@
 #!/usr/bin/env ksh
 
 # installing minimal app set
-sudo pkg_add arandr cmixer firefox-esr fvwm2 gcc gnome-themes-extra htop mozilla-dicts-be \
-mozilla-dicts-ru mozilla-dicts-uk noto-cjk obfs4proxy qtstyleplugins slim slim-themes \
-tor-browser tshark unifont unzip-6.0p13-iconv vim wget xfe
+sudo pkg_add arandr cmixer compton firefox-esr fvwm2 gcc gnome-themes-extra htop \
+mozilla-dicts-be mozilla-dicts-ru mozilla-dicts-uk noto-cjk obfs4proxy qtstyleplugins slim \
+slim-themes tor-browser tshark unifont unzip-6.0p13-iconv vim wget xfe
 
 # applying post-install settings
 sudo wget -P /etc/tor https://github.com/shino2k/4obsd/blob/main/warp
