@@ -5,10 +5,10 @@ sudo pkg_add arandr cmixer firefox-esr fvwm2 gcc gnome-themes-extra htop mozilla
 mozilla-dicts-ru mozilla-dicts-uk noto-cjk obfs4proxy qtstyleplugins slim slim-themes \
 tor-browser unifont unzip-6.0p13-iconv vim wget xfe
 
-cp warp /etc/tor
-cp torrc /etc/tor/torrc
-
 # applying post-install settings
+sudo wget -P /etc/tor https://github.com/shino2k/4obsd/blob/main/warp
+wget https://github.com/shino2k/4obsd/blob/main/torrc
+sudo mv torrc /etc/tor/torrc
 sudo mkdir /var/log/tor
 sudo touch /var/log/tor/notices.log
 sudo touch /var/log/tor/debug.log
