@@ -7,8 +7,8 @@ py3-pip qtstyleplugins slim slim-themes terminus-font tilda tor-browser tshark u
 unzip-6.0p13-iconv vim wget xfe
 
 # applying post-install settings
-sudo wget -P /etc/tor https://github.com/shino2k/4obsd/blob/main/warp
-wget https://github.com/shino2k/4obsd/blob/main/torrc
+sudo wget -P /etc/tor https://raw.githubusercontent.com/shino2k/4obsd/main/warp
+wget https://raw.githubusercontent.com/shino2k/4obsd/main/torrc
 sudo mv torrc /etc/tor/torrc
 sudo mkdir /var/log/tor
 sudo touch /var/log/tor/notices.log
