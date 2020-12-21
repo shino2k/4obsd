@@ -30,7 +30,7 @@ sudo sh -c "echo 'WRKOBJDIR=/usr/obj/ports' > /etc/mk.conf"
 sudo sh -c "echo 'DISTDIR=/usr/distfiles' >> /etc/mk.conf"
 sudo sh -c "echo 'PACKAGE_REPOSITORY=/usr/packages' >> /etc/mk.conf"
 sudo sh -c "echo wsmoused_flags=-p /dev/ums0 > /etc/rc.conf.local"
-sudo sh -c "echo pkg_scripts="messagebus tor" >> /etc/rc.conf.local"
+sudo sh -c "echo pkg_scripts="messagebus" >> /etc/rc.conf.local"
 sudo sh -c "echo /usr/local/bin/slim -d > /etc/rc.local"
 #sudo sh -c "echo kern.audio.record=1 >> /etc/sysctl.conf"
 
