@@ -1,0 +1,8 @@
+SOCKSPort 8787
+DataDirectory /var/tor
+Log notice file /var/log/tor/notices.log
+Log debug file /var/log/tor/debug.log
+RunAsDaemon 1
+User _tor
+ExcludeExitNodes {am},{az},{by},{cn},{ir},{kg},{kp},{kz},{ru},{rs},{su},{sy},{tj},{tm},{ua},{uz},{??}
+StrictNodes 1
