@@ -1,11 +1,19 @@
 #!/usr/bin/env ksh
 
 # installing minimal app set
-sudo pkg_add arandr cmixer firefox-esr fvwm2 gcc htop mozilla-dicts-be mozilla-dicts-ru \
-mozilla-dicts-uk noto-cjk obfs4proxy p5-XML-Parser slim slim-themes tor \
-unifont unzip-6.0p13-iconv vim wget xfe gnome-themes-extra
+sudo pkg_add arandr cmixer firefox-esr fvwm2 gcc gnome-themes-extra htop mozilla-dicts-be \
+mozilla-dicts-ru mozilla-dicts-uk noto-cjk obfs4proxy qtstyleplugins slim slim-themes \
+tor-browser unifont unzip-6.0p13-iconv vim wget xfe
+
+cp warp /etc/tor
+cp torrc /etc/tor/torrc
 
 # applying post-install settings
+sudo mkdir /var/log/tor
+sudo touch /var/log/tor/notices.log
+sudo touch /var/log/tor/debug.log
+sudo chown -R _tor:_tor /var/log/tor
+sudo chmod 700 /var/log/tor
 cd /tmp
 git clone https://github.com/bfmartin/fvwm-config-on-openbsd.git
 cd fvwm-config-on-openbsd/
@@ -21,11 +29,11 @@ sudo sh -c "echo 'WRKOBJDIR=/usr/obj/ports' > /etc/mk.conf"
 sudo sh -c "echo 'DISTDIR=/usr/distfiles' >> /etc/mk.conf"
 sudo sh -c "echo 'PACKAGE_REPOSITORY=/usr/packages' >> /etc/mk.conf"
 sudo sh -c "echo wsmoused_flags=-p /dev/ums0 > /etc/rc.conf.local"
-sudo sh -c "echo pkg_scripts="messagebus" >> /etc/rc.conf.local"
+sudo sh -c "echo pkg_scripts="messagebus tor" >> /etc/rc.conf.local"
 sudo sh -c "echo /usr/local/bin/slim -d > /etc/rc.local"
 #sudo sh -c "echo kern.audio.record=1 >> /etc/sysctl.conf"
 
 # setting up zsh
 sudo pkg_add zsh
-#echo 'export QT_QPA_PLATFORMTHEME=gtk2' > ~/.zprofile
-#sudo cp ~/.zprofile /root
+echo 'export QT_QPA_PLATFORMTHEME=gtk2' > ~/.zprofile
+sudo cp ~/.zprofile /root
