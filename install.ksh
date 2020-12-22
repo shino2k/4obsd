@@ -18,6 +18,7 @@ sudo touch /var/log/tor/debug.log
 sudo chown -R _tor:_tor /var/log/tor/
 sudo chmod 700 /var/log/tor/
 
+cd /tmp
 ftp https://cdn.openbsd.org/pub/OpenBSD/$(uname -r)/{ports.tar.gz,SHA256.sig}
 signify -Cp /etc/signify/openbsd-$(uname -r | cut -c 1,3)-base.pub -x SHA256.sig ports.tar.gz
 cd /usr
