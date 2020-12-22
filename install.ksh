@@ -30,7 +30,6 @@ cd ports/fonts/msttcorefonts/
 sudo make install
 cd ../cascadia-code
 sudo make install
-cd /tmp
 
 # applying post-install settings
 
