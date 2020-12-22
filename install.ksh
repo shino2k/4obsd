@@ -7,7 +7,7 @@ gnome-themes-extra gpicview htop ibm-plex innoextract mac-telnet mozilla-dicts-b
 mozilla-dicts-ru mozilla-dicts-uk mygui neofetch ninja nitrogen nmap noto-cjk obconf \
 obfs4proxy obmenu openal openbox openscenegraph py3-pip qtstyleplugins qttools ru-ptsans \
 sdl2 slim slim-themes tilda tint2 tor-browser tshark unifont unshield unzip-6.0p13-iconv \
-vim wget xfe
+vim wget xfe xscreensaver
 
 sudo cp gtkrc /etc/gtk-2.0/
 sudo cp settings.ini /etc/gtk-3.0/
