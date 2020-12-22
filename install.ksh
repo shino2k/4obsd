@@ -9,9 +9,9 @@ obfs4proxy obmenu openal openbox openscenegraph py3-pip qtstyleplugins qttools r
 sdl2 slim slim-themes tilda tint2 tor-browser tshark unifont unshield unzip-6.0p13-iconv \
 vim wget xfe
 
-cp gtkrc /etc/gtk-2.0/
-cp settings.ini /etc/gtk-3.0/
-cp warp /etc/tor/
+sudo cp gtkrc /etc/gtk-2.0/
+sudo cp settings.ini /etc/gtk-3.0/
+sudo cp warp /etc/tor/
 sudo mkdir /var/log/tor/
 sudo touch /var/log/tor/notices.log
 sudo touch /var/log/tor/debug.log
