@@ -2,8 +2,8 @@
 
 # installing minimal app set
 
-sudo pkg_add arandr cabextract catfish cmake cmixer compton e2fsprogs ffmpeg firefox-esr \
-gcc gnome-themes-extra gpicview htop ibm-plex innoextract mac-telnet mozilla-dicts-be \
+sudo pkg_add arandr cabextract catfish cmake cmixer compton e2fsprogs ffmpeg firefox gcc \
+gnome-themes-extra gpicview htop ibm-plex innoextract mac-telnet mozilla-dicts-be \
 mozilla-dicts-ru mozilla-dicts-uk mygui neofetch ninja nitrogen nmap noto-cjk obconf \
 obfs4proxy obmenu openal openbox openscenegraph py3-pip qtstyleplugins qttools ru-ptsans \
 sdl2 slim slim-themes tilda tint2 tor-browser tshark unifont unshield unzip-6.0p13-iconv \
