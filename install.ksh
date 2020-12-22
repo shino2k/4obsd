@@ -27,6 +27,8 @@ sudo sh -c "echo 'DISTDIR=/usr/distfiles' >> /etc/mk.conf"
 sudo sh -c "echo 'PACKAGE_REPOSITORY=/usr/packages' >> /etc/mk.conf"
 cd ports/fonts/msttcorefonts/
 sudo make install
+cd ../cascadia-code
+sudo make install
 cd /tmp
 
 # applying post-install settings
