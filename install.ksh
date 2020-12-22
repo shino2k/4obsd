@@ -9,6 +9,10 @@ obfs4proxy obmenu openal openbox openscenegraph py3-pip qtstyleplugins qttools r
 sdl2 slim slim-themes tilda tint2 tor-browser tshark unifont unshield unzip-6.0p13-iconv \
 vim wget xfe
 
+cp gtkrc /etc/gtk-2.0/
+cp settings.ini /etc/gtk-3.0/
+cp warp /etc/tor/
+
 ftp https://cdn.openbsd.org/pub/OpenBSD/$(uname -r)/{ports.tar.gz,SHA256.sig}
 signify -Cp /etc/signify/openbsd-$(uname -r | cut -c 1,3)-base.pub -x SHA256.sig ports.tar.gz
 cd /usr
@@ -21,9 +25,6 @@ sudo make install
 cd /tmp
 
 # applying post-install settings
-sudo wget -P /etc/tor https://raw.githubusercontent.com/shino2k/4obsd/main/warp
-wget https://raw.githubusercontent.com/shino2k/4obsd/main/torrc
-sudo mv torrc /etc/tor/torrc
 sudo mkdir /var/log/tor
 sudo touch /var/log/tor/notices.log
 sudo touch /var/log/tor/debug.log
@@ -31,6 +32,7 @@ sudo chown -R _tor:_tor /var/log/tor
 sudo chmod 700 /var/log/tor
 cd ..
 sudo sh -c "echo wsmoused_flags=-p /dev/ums0 > /etc/rc.conf.local"
+sudo sh -c "echo tor_flags=-f /etc/tor/warp >> /etc/rc.conf.local"
 sudo sh -c "echo pkg_scripts="messagebus" >> /etc/rc.conf.local"
 sudo sh -c "echo /usr/local/bin/slim -d > /etc/rc.local"
 #sudo sh -c "echo kern.audio.record=1 >> /etc/sysctl.conf"
