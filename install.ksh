@@ -5,9 +5,9 @@
 sudo pkg_add arandr cabextract catfish cmake cmixer compton e2fsprogs ffmpeg firefox gcc \
 gmrun gnome-themes-extra gpicview htop ibm-plex innoextract mac-telnet mozilla-dicts-be \
 mozilla-dicts-ru mozilla-dicts-uk mygui neofetch ninja nitrogen nmap noto-cjk obconf \
-obfs4proxy obmenu openal openbox openscenegraph py3-pip qtstyleplugins qttools ru-ptsans \
-sdl2 slim slim-themes tilda tint2 tor-browser tray-app tshark unifont unshield \
-unzip-6.0p13-iconv vim wget xfe xscreensaver
+obfs4proxy obmenu openal openbox openscenegraph pidgin-otr pidgin-window-merge py3-pip \
+qtstyleplugins qttools ru-ptsans sdl2 slim slim-themes tilda tint2 tor-browser tray-app \
+tshark unifont unshield unzip-6.0p13-iconv vim wget xfe xscreensaver
 
 sudo cp gtkrc /etc/gtk-2.0/
 sudo cp settings.ini /etc/gtk-3.0/
