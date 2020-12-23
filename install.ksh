@@ -48,5 +48,5 @@ echo 'exec openbox-session' > ~/.xinitrc
 # setting up zsh
 
 sudo pkg_add zsh
-echo 'export QT_QPA_PLATFORMTHEME=gtk2' > ~/.zprofile
-sudo cp ~/.zprofile /root
+sudo echo 'export QT_QPA_PLATFORMTHEME=gtk2' > /etc/zprofile
+#sudo cp ~/.zprofile /root
