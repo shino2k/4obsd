@@ -28,8 +28,8 @@ sudo sh -c "echo 'DISTDIR=/usr/distfiles' >> /etc/mk.conf"
 sudo sh -c "echo 'PACKAGE_REPOSITORY=/usr/packages' >> /etc/mk.conf"
 cd ports/net/proxychains-ng
 sudo make install
-cd ../../games/openmw
-sudo make install
+#cd ../../games/openmw
+#sudo make install
 cd ../../fonts/msttcorefonts/
 sudo make install
 cd ../cascadia-code
@@ -48,5 +48,4 @@ echo 'exec openbox-session' > ~/.xinitrc
 # setting up zsh
 
 sudo pkg_add zsh
-sudo echo 'export QT_QPA_PLATFORMTHEME=gtk2' > /etc/zprofile
-#sudo cp ~/.zprofile /root
+sudo sh -c "echo 'export QT_QPA_PLATFORMTHEME=gtk2' > /etc/zprofile"
