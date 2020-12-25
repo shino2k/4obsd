@@ -4,8 +4,8 @@
 
 sudo pkg_add arandr bullet cabextract catfish cmake cmixer compton e2fsprogs ffmpeg firefox \
 gcc gmrun gnome-themes-extra gpicview gsimplecal htop ibm-plex innoextract mac-telnet \
-mozilla-dicts-be mozilla-dicts-ru mozilla-dicts-uk mygui neofetch ninja nitrogen nmap \
-noto-cjk noto-emoji obconf obfs4proxy obmenu openal openbox openscenegraph pidgin-otr \
+minicom mozilla-dicts-be mozilla-dicts-ru mozilla-dicts-uk mtr mygui neofetch ninja nitrogen \
+nmap noto-cjk noto-emoji obconf obfs4proxy obmenu openal openbox openscenegraph pidgin-otr \
 pidgin-window-merge py3-pip qtstyleplugins qttools ru-ptsans sdl2 slim slim-themes tilda \
 tint2 tor-browser tshark unifont unshield unzip-6.0p13-iconv vim wget xfe xscreensaver
 
